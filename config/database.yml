@@ -3,8 +3,8 @@ development:
   encoding: unicode
   database: faktura_development
   pool: 5
-  username: faktura-api
-  password:
+  username: postgres
+  password: hanes123
 test:
   adapter: postgresql
   encoding: unicode
