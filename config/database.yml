@@ -10,8 +10,8 @@ test:
   encoding: unicode
   database: faktura_test
   pool: 5
-  username: faktura-api
-  password:
+  username: postgres
+  password: hanes123
 production:
   adapter: postgresql
   encoding: unicode
