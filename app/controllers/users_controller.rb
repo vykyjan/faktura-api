@@ -1,7 +1,8 @@
-class UsersController < Devise::RegistrationsController
+class UsersController < ApplicationController
 
 
-  def index
-    @user = User.find(params[:id])
+
+  def show
+    @users = User.all
   end
 end

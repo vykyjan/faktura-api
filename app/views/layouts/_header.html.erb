@@ -24,33 +24,14 @@
       <li class="divider"></li>
       <li class="active"><%= link_to("Home", root_path) %></li>
       <li class="divider"></li>
-      <li><a href="#">Main Item 2</a></li>
-      <li class="divider"></li>
-      <li class="has-dropdown"><a href="#">Main Item 3</a>
+
+
+      <li class="has-dropdown"><a href="#">Account</a>
+
 
         <ul class="dropdown">
-          <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
 
-            <ul class="dropdown">
-              <li><label>Dropdown Level 2 Label</label></li>
-              <li><a href="#">Dropdown Level 2a</a></li>
-              <li><a href="#">Dropdown Level 2b</a></li>
-              <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
-
-                <ul class="dropdown">
-                  <li><label>Dropdown Level 3 Label</label></li>
-                  <li><a href="#">Dropdown Level 3a</a></li>
-                  <li><a href="#">Dropdown Level 3b</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Dropdown Level 3c</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown Level 2d</a></li>
-              <li><a href="#">Dropdown Level 2e</a></li>
-              <li><a href="#">Dropdown Level 2f</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Dropdown Level 1b</a></li>
+          <li><%= link_to('Setting My Profil', edit_user_registration_path(@user)) %></li>
           <li><a href="#">Dropdown Level 1c</a></li>
           <li class="divider"></li>
           <li><a href="#">Dropdown Level 1d</a></li>
