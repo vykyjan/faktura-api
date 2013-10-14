@@ -1,3 +1,7 @@
+<% if signed_in? %>
+    Ahoj
+<% else %>
+
 <div class=".text-center", id="homepage">
 <h1>Welcome to the Sample App</h1>
 
@@ -7,5 +11,8 @@
   sample application.
 </h2>
 
-<%= link_to "Sign up now!", '#', class: "button radius" %>
+<%= link_to "Sign up now!", new_user_registration_path, class: "button radius" %>
 </div>
+
+
+<% end %>

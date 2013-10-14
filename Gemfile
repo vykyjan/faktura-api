@@ -8,6 +8,7 @@ ruby '2.0.0'
 gem 'pg'
 gem 'rails_12factor'
 gem 'rspec-rails', '2.13.1'
+gem 'devise'
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'

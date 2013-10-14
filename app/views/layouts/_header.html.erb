@@ -22,7 +22,7 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li class="divider"></li>
-      <li class="active"><a href="#">Main Item 1</a></li>
+      <li class="active"><%= link_to("Home", root_path) %></li>
       <li class="divider"></li>
       <li><a href="#">Main Item 2</a></li>
       <li class="divider"></li>
@@ -112,7 +112,11 @@
       </li>
       <li class="divider show-for-small"></li>
       <li class="has-form">
-        <a class="button" href="#">Button!</a>
+        <% if signed_in? %>
+        <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+            <% else %>
+            <%= link_to('Login', new_user_session_path)  %>
+      <% end %>
       </li>
     </ul>
   </section>
