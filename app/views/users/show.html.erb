@@ -1,6 +1,22 @@
-<% @users.each do |user| %>
-    <%= user.name %>
-    <%= user.email %>
-    <%= user.adress %>
 
-<% end %>
+
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @users.each do |user| %>
+      <tr>
+       <td> <%= user.name %>  </td>
+        <td> <%= user.email %>  </td>
+        <td> <%= user.adress %>   </td>
+        <td> <%= user.ic %>   </td>
+        <td> <%= user.dic %>  </td>
+        <td> <%= user.bank_account %>  </td>
+        <td> <%= user.dph %>   </td>
+      </tr>
+  <% end %>
+</table>
