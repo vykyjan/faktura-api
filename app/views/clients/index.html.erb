@@ -1,0 +1,42 @@
+<h1>clients <%= @email %> </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Register</th>
+      <th>Ic</th>
+      <th>Dic</th>
+      <th>Adress</th>
+      <th>Bank account</th>
+      <th>Hdp</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.name %></td>
+        <td><%= client.register %></td>
+        <td><%= client.ic %></td>
+        <td><%= client.dic %></td>
+        <td><%= client.adress %></td>
+        <td><%= client.bank_account %></td>
+        <td><%= client.hdp %></td>
+
+        <td><%= link_to 'Show', client_path( client), class: "btn " %></td>
+        <td><%= link_to 'Edit', edit_client_path( client), class: "btn " %></td>
+        <td><%= link_to 'Delete', client_path( client), :confirm => 'Opravdu smazat?', :method => :delete, class: "btn " %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Client', new_client_path(@user), class: "btn " %>
+<%= link_to 'Back to user', @user, class: "btn " %>

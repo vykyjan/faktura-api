@@ -1,0 +1,24 @@
+<h1>Listing invoices</h1>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>description</th>
+    <th>price</th>
+  </tr>
+
+
+
+  <% @invoices.each do |invoice| %>
+
+      <td><%= Client.find(invoice.client_id).name %></td>
+        <td><%= invoice.description %></td>
+        <td><%= invoice.price %></td>
+      <td><%= link_to 'Show', invoice %></td>
+      <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
+      <td><%= link_to 'Delete', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
+      </tr>
+  <% end %>
+
+</table>
+<%= link_to "New invoice", new_invoice_path %>

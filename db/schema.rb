@@ -11,7 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131014063201) do
+ActiveRecord::Schema.define(version: 20131015094950) do
+
+  create_table "clients", force: true do |t|
+    t.string   "name"
+    t.string   "register"
+    t.string   "ic"
+    t.string   "dic"
+    t.string   "adress"
+    t.string   "bank_account"
+    t.string   "hdp"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clients", ["user_id"], name: "index_clients_on_user_id", using: :btree
+
+  create_table "invoices", force: true do |t|
+    t.integer  "client_id"
+    t.text     "description"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "invoices", ["client_id"], name: "index_invoices_on_client_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

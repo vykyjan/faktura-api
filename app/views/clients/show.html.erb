@@ -1,0 +1,47 @@
+<h1>Adresa <%= current_user.email %></h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Register:</strong>
+  <%= @client.register %>
+</p>
+
+<p>
+  <strong>Ic:</strong>
+  <%= @client.ic %>
+</p>
+
+<p>
+  <strong>Dic:</strong>
+  <%= @client.dic %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @client.adress %>
+</p>
+
+<p>
+  <strong>Bank account:</strong>
+  <%= @client.bank_account %>
+</p>
+
+<p>
+  <strong>Hdp:</strong>
+  <%= @client.hdp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @client %>
+</p>
+
+<%= link_to 'Změnit', edit_client_path(@client), class: "btn " %> |
+<%= link_to 'Zpět', clients_path(@user), class: "btn " %>
+

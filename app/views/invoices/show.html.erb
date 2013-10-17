@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+<div class="small-4 columns">
+ Zákazník  </br>
+
+  <b>name:</b>
+  <%= @invoice.client.name %>
+</br>
+
+  <b>register:</b>
+  <%= @invoice.client.register %>
+</br>
+
+  <b>IC:</b>
+  <%= @invoice.client.ic %>
+</br>
+
+  <b>DIC:</b>
+  <%= @invoice.client.dic %>
+</br>
+
+  <b>adress:</b>
+  <%= @invoice.client.adress %>
+</br>
+
+  <b>HDP:</b>
+  <%= @invoice.client.hdp %>
+</br>
+
+  <b>Bank Accout:</b>
+  <%= @invoice.client.bank_account %>
+</br>
+</div>
+<div class="small-3 columns">
+  <b>description:</b>
+  <%= @invoice.description %>
+</br>
+
+  <b>Price:</b>
+  <%= @invoice.price %>
+</br>  </div>
+  <div class="small-4 columns">
+Prodávající </br>
+
+<b>name:</b>
+  <%= @current_user.name %>   </br>
+
+
+  <b>email:</b>
+  <%= @current_user.email %> </br>
+
+  <b>register:</b>
+  <%= @current_user.register %>  </br>
+
+  <b>ic:</b>
+  <%= @current_user.ic %>  </br>
+
+  <b>dic:</b>
+  <%= @current_user.dic %>  </br>
+
+  <b>Adress:</b>
+  <%= @current_user.adress %>    </br>
+
+  <b>HDP:</b>
+  <%= @current_user.dph %>  </br>
+
+  <b>Bank account:</b>
+  <%= @current_user.bank_account %>   </br>
+  </div> </div>
+    <%= link_to "Download to PDF", invoice_path(@invoice, :format => "pdf") %>
+    <%= link_to "Back", invoices_path %>
+    <%= link_to 'Edit', edit_invoice_path %>
+
+

@@ -9,6 +9,8 @@ gem 'pg'
 gem 'rails_12factor'
 gem 'rspec-rails', '2.13.1'
 gem 'devise'
+gem 'simple_form'
+gem 'pdfkit'
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'

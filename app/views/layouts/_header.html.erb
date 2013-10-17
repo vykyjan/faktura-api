@@ -32,9 +32,9 @@
         <ul class="dropdown">
 
           <li><%= link_to('Setting My Profil', edit_user_registration_path(@user)) %></li>
-          <li><%= link_to('All users', users_path) %></li>
+          <li><%= link_to('clients', clients_path ) %></li>
           <li class="divider"></li>
-          <li><a href="#">Dropdown Level 1d</a></li>
+          <li><%= link_to('Invoices', invoices_path ) %></li>
           <li><a href="#">Dropdown Level 1e</a></li>
           <li><a href="#">Dropdown Level 1f</a></li>
           <li class="divider"></li>
@@ -85,7 +85,7 @@
             <div class="small-8 columns">
               <input type="text">
             </div>
-            <div class="small-4 columns">
+            <div class="small-2 columns">
               <a href="#" class="alert button">Search</a>
             </div>
           </div>

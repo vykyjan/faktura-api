@@ -1,0 +1,17 @@
+<h1>Editing post</h1>
+
+<%= form_for(@invoice) do |f| %>
+    <%=f.collection_select :client_id, Client.all, :id, :name %>
+
+    <%= f.label :description %></br>
+    <%= f.text_field :description %>
+
+    <%= f.label :price %></br>
+    <%= f.text_field :price %>
+
+    <%= f.submit %>
+
+<% end %>
+
+<%= link_to 'Prohlédnout', @invoice, class: "btn " %> |
+<%= link_to 'Zpět', invoices_path, class: "btn " %>
