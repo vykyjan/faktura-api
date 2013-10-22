@@ -17,5 +17,5 @@ production:
   encoding: unicode
   database: faktura_production
   pool: 5
-  username: faktura-api
-  password:
+  username: postgres
+  password: hanes123

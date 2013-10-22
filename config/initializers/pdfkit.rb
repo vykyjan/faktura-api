@@ -1,6 +1,7 @@
 PDFKit.configure do |config|
   config.wkhtmltopdf = '/usr/local/bin/wkhtmltopdf' if Rails.env.production?
-  config.default_options = {
+
+config.default_options = {
       :page_size => 'Legal',
       :print_media_type => true,
       :encoding => "UTF-8",
