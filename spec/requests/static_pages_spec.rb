@@ -4,9 +4,9 @@ describe "Static pages" do
 
   describe "Home page" do
 
-    it "should have the content 'Sample App'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Sample App')
+    it "should have the content 'Welcome'" do
+      visit ''
+      expect(page).to have_content('')
     end
   end
 end

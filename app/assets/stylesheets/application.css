@@ -12,3 +12,10 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+
+@media print {
+body{
+    background-color: ;
+}
+}

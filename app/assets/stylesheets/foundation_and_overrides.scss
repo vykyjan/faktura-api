@@ -1330,4 +1330,9 @@ $topbar-bg-color: #222059;
   text-align: center;
   padding-top: 50px;
   margin-bottom: 100px;
+
+}
+
+@media print {
+  background-color: #000;
 }
