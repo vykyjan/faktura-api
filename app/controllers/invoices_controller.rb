@@ -1,6 +1,7 @@
 class InvoicesController < ApplicationController
   before_filter :show_navbar
 
+
   def index
     @invoices = Invoice.all
     @clients = Client.all
@@ -20,18 +21,10 @@ class InvoicesController < ApplicationController
 
   def show
     @invoice = Invoice.find(params[:id])
-    @user = current_user[:id]
+    @users = current_user[:id]
 
-    respond_to do |format|
-      format.html
-      format.pdf {
-        html = render_to_string(:layout => "pdf.html.erb" , :action => "show.html.erb", :formats => [:html], :handler => [:erb])
-        kit = PDFKit.new(html)
-        kit.stylesheets << "#{Rails.root}/app/assets/stylesheets/application.css"
-        send_data(kit.to_pdf, :filename => "#{clean_string(@event.title)}.pdf", :type => 'application/pdf')
-        return # to avoid double render call
-      }
-     end
+
+
   end
 
   def edit

@@ -15,5 +15,7 @@
 
 
 @media print {
-
+body {
+    background-color: red;
+}
 }

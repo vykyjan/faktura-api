@@ -10,7 +10,8 @@ gem 'rails_12factor'
 gem 'rspec-rails', '2.13.1'
 gem 'devise'
 gem 'simple_form'
-gem 'pdfkit'
+gem "prawnto_2", :require => "prawnto"
+gem 'prawn', :git => "https://github.com/prawnpdf/prawn.git"
 
 
 group :test do
