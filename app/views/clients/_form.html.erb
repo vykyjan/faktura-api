@@ -12,32 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, "Jméno" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :register %><br>
+    <%= f.label :register, "Zápis v rejstříku" %><br>
     <%= f.text_field :register %>
   </div>
   <div class="field">
-    <%= f.label :ic %><br>
+    <%= f.label :ic , "IC"%><br>
     <%= f.text_field :ic %>
   </div>
   <div class="field">
-    <%= f.label :dic %><br>
+    <%= f.label :dic, "DIC" %><br>
     <%= f.text_field :dic %>
   </div>
   <div class="field">
-    <%= f.label :adress %><br>
+    <%= f.label :adress, "Adresa" %><br>
     <%= f.text_field :adress %>
   </div>
   <div class="field">
-    <%= f.label :bank_account %><br>
+    <%= f.label :bank_account,"Bankovní účet" %><br>
     <%= f.text_field :bank_account %>
   </div>
   <div class="field">
-    <%= f.label :hdp %><br>
-    <%= f.text_field :hdp %>
+    <%= f.label :hdp, "Plátce DPH" %><br>
+    <%= f.check_box :hdp, {}, "true", "false" %>
   </div>
 
   <div class="actions">

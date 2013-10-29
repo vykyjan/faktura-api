@@ -1,28 +1,28 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Změnit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-    <div><%= f.label :name %><br />
+    <div><%= f.label :name, "Jméno" %><br />
     <%= f.text_field :name %> </div>
 
-    <div><%= f.label :register %><br />
+    <div><%= f.label :register, "Zápis v rejstříku" %><br />
     <%= f.text_field :register %> </div>
 
-    <div><%= f.label :ic %><br />
+    <div><%= f.label :ic, "IČ" %><br />
     <%= f.text_field :ic %>  </div>
 
-    <div><%= f.label :dic %><br />
+    <div><%= f.label :dic, "DIČ" %><br />
     <%= f.text_field :dic %>   </div>
 
-    <div><%= f.label :adress %><br />
+    <div><%= f.label :adress, "Adresa" %><br />
     <%= f.text_field :adress %>   </div>
 
-    <div><%= f.label :bank_account %><br />
+    <div><%= f.label :bank_account, "Bankovní účet" %><br />
       <%= f.text_field :bank_account %>   </div>
 
-    <div><%= f.label :dph %><br />
-      <%= f.text_field :dph %>   </div>
+    <div><%= f.label :dph, "Plátce DPH" %><br />
+      <%= f.check_box :dph, {}, "true", "false" %>   </div>
 
 
             <div><%= f.label :email %><br />

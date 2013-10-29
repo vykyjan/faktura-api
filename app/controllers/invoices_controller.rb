@@ -23,6 +23,11 @@ class InvoicesController < ApplicationController
     @invoice = Invoice.find(params[:id])
     @users = current_user[:id]
 
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @invoice }
+      format.pdf { render :layout => false } # Add this line
+    end
 
 
   end

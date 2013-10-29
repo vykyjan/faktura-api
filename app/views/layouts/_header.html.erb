@@ -26,19 +26,16 @@
       <li class="divider"></li>
 
       <% if signed_in? %>
-      <li class="has-dropdown"><a href="#">Account</a>
+      <li class="has-dropdown"><a href="#">Můj účet</a>
 
 
         <ul class="dropdown">
 
-          <li><%= link_to('Setting My Profil', edit_user_registration_path(@user)) %></li>
-          <li><%= link_to('clients', clients_path ) %></li>
+          <li><%= link_to('Změnit údaje', edit_user_registration_path(@user)) %></li>
+          <li><%= link_to('Moji klienti', clients_path ) %></li>
           <li class="divider"></li>
-          <li><%= link_to('Invoices', invoices_path ) %></li>
-          <li><a href="#">Dropdown Level 1e</a></li>
-          <li><a href="#">Dropdown Level 1f</a></li>
-          <li class="divider"></li>
-          <li><a href="#">See all &rarr;</a></li>
+          <li><%= link_to('Moje faktury', invoices_path ) %></li>
+
         </ul>
       </li>
       <li class="divider"></li>
@@ -60,9 +57,9 @@
       <li class="divider show-for-small"></li>
       <li class="has-form">
         <% if signed_in? %>
-        <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+        <%= link_to "Odhlásit", destroy_user_session_path, :method => :delete %>
             <% else %>
-            <%= link_to('Login', new_user_session_path)  %>
+            <%= link_to('Přihlásit', new_user_session_path)  %>
       <% end %>
       </li>
     </ul>
