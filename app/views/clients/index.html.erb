@@ -1,14 +1,14 @@
-<h1>clients <%= @email %> </h1>
+<h1>Moji Klienti <%= @email %> </h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Register</th>
-      <th>Ic</th>
-      <th>Dic</th>
-      <th>Adress</th>
-      <th>Bank account</th>
+      <th>Jméno</th>
+      <th>Zápis v rejstříku</th>
+      <th>IČ</th>
+      <th>DIČ</th>
+      <th>Adresa</th>
+      <th>Bankovní účet</th>
       <th>Hdp</th>
 
       <th></th>
@@ -28,9 +28,9 @@
         <td><%= client.bank_account %></td>
         <td><%= client.hdp %></td>
 
-        <td><%= link_to 'Show', client_path( client), class: "btn " %></td>
-        <td><%= link_to 'Edit', edit_client_path( client), class: "btn " %></td>
-        <td><%= link_to 'Delete', client_path( client), :confirm => 'Opravdu smazat?', :method => :delete, class: "btn " %></td>
+        <td><%= link_to 'Prohlédnout', client_path( client), class: "btn " %></td>
+        <td><%= link_to 'Změnit', edit_client_path( client), class: "btn " %></td>
+        <td><%= link_to 'Smazat', client_path( client), :confirm => 'Opravdu smazat?', :method => :delete, class: "btn " %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,5 +38,5 @@
 
 <br />
 
-<%= link_to 'New Client', new_client_path(@user), class: "btn " %>
-<%= link_to 'Back to user', @user, class: "btn " %>
+<%= link_to 'Nový Klient', new_client_path(@user), class: "btn " %>
+<%= link_to 'Zpět na ', @user, class: "btn " %>

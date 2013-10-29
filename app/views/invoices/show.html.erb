@@ -4,72 +4,72 @@
 
  Zákazník  </br>
 
-  <b>name:</b>
+  <b>Jméno:</b>
   <%= @invoice.client.name %>
 </br>
 
-  <b>register:</b>
+  <b>Záznam v rejstříku:</b>
   <%= @invoice.client.register %>
 </br>
 
-  <b>IC:</b>
+  <b>IČ:</b>
   <%= @invoice.client.ic %>
 </br>
 
-  <b>DIC:</b>
+  <b>DIČ:</b>
   <%= @invoice.client.dic %>
 </br>
 
-  <b>adress:</b>
+  <b>adresa:</b>
   <%= @invoice.client.adress %>
 </br>
 
-  <b>HDP:</b>
+  <b>Plátce DPH:</b>
   <%= @invoice.client.hdp %>
 </br>
 
-  <b>Bank Accout:</b>
+  <b>Bankovní účet:</b>
   <%= @invoice.client.bank_account %>
 </br>
 </div>
 <div class="small-3 columns">
-  <b>description:</b>
+  <b>Popis:</b>
   <%= @invoice.description %>
 </br>
 
-  <b>Price:</b>
+  <b>Cena:</b>
   <%= @invoice.price %>
 </br>  </div>
   <div class="small-4 columns">
 Prodávající </br>
 
-<b>name:</b>
+<b>Jméno:</b>
   <%= @current_user.name %>   </br>
 
 
   <b>email:</b>
   <%= @current_user.email %> </br>
 
-  <b>register:</b>
+  <b>Záznam v registru:</b>
   <%= @current_user.register %>  </br>
 
-  <b>ic:</b>
+  <b>IČ:</b>
   <%= @current_user.ic %>  </br>
 
-  <b>dic:</b>
+  <b>DIČ:</b>
   <%= @current_user.dic %>  </br>
 
-  <b>Adress:</b>
+  <b>Adresa:</b>
   <%= @current_user.adress %>    </br>
 
-  <b>HDP:</b>
+  <b>Plátce DPH:</b>
   <%= @current_user.dph %>  </br>
 
-  <b>Bank account:</b>
+  <b>Bankovní účet:</b>
   <%= @current_user.bank_account %>   </br>
   </div> </div>
-    <%= link_to "Download to PDF", invoice_path(@invoice, :format => "pdf") %>
-    <%= link_to "Back", invoices_path %>
-    <%= link_to 'Edit', edit_invoice_path %>
+    <%= link_to "Stáhnout PDF", invoice_path(@invoice, :format => "pdf") %>
+    <%= link_to "Zpět", invoices_path %>
+    <%= link_to 'Změnit', edit_invoice_path %>
 
 

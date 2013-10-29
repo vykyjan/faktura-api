@@ -1,4 +1,7 @@
-<h1>Adresa <%= current_user.email %></h1>
+<h2>Já  <% if current_user.name.blank? %><%= link_to current_user.email %>
+      <% else %>
+      <%= current_user.name %>
+      <% end %> a můj klient</h2>
 
 <p id="notice"><%= notice %></p>
 

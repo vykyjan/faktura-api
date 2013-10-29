@@ -2,12 +2,12 @@ Vybrat client
 <%= form_for(@invoice) do |f| %>
 <%=f.collection_select :client_id, current_user.clients, :id, :name %>
 
-    <%= f.label :description %></br>
+    <%= f.label :description, "Popis" %></br>
     <%= f.text_field :description %>
 
-    <%= f.label :price %></br>
+    <%= f.label :price, "Cena" %></br>
     <%= f.text_field :price %>
 
-    <%= f.submit %>
+    <%= f.submit "Vytvořit fakturu" %>
 
               <% end %>

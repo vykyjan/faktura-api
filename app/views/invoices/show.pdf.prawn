@@ -17,8 +17,8 @@ pdf.text "Faktura ##{@invoice.id}"
 \nRegister:#{current_user.dph}
 \nRegister:#{current_user.register}
 "], 
-["text:#{@invoice.description}"], 
-["cena:#{@invoice.price}"],
+["text: #{@invoice.description}", colspan: 2], 
+["cena: #{@invoice.price}", colspan: 2],
 ]
 
     pdf.table(table_data, :cell_style => { :inline_format => true })

@@ -1,10 +1,10 @@
-<h1>Listing invoices</h1>
+<h1>Moje faktury</h1>
 
 <table>
   <tr>
-    <th>name</th>
-    <th>description</th>
-    <th>price</th>
+    <th>Jméno</th>
+    <th>Popis</th>
+    <th>Cena</th>
   </tr>
 
 
@@ -14,11 +14,11 @@
       <td><%= Client.find(invoice.client_id).name %></td>
         <td><%= invoice.description %></td>
         <td><%= invoice.price %></td>
-      <td><%= link_to 'Show', invoice %></td>
-      <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
-      <td><%= link_to 'Delete', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
+      <td><%= link_to 'Prohlédnout', invoice %></td>
+      <td><%= link_to 'Změnit', edit_invoice_path(invoice) %></td>
+      <td><%= link_to 'Smazat', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
       </tr>
   <% end %>
 
 </table>
-<%= link_to "New invoice", new_invoice_path %>
+<%= link_to "Nová faktura", new_invoice_path %>
