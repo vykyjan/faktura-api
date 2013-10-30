@@ -1,4 +1,4 @@
-<h2>Změnit <%= resource_name.to_s.humanize %></h2>
+<h2>Změnit moje údaje</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -22,7 +22,7 @@
       <%= f.text_field :bank_account %>   </div>
 
     <div><%= f.label :dph, "Plátce DPH" %><br />
-      <%= f.check_box :dph, {}, "true", "false" %>   </div>
+     Ano <%= f.check_box :dph, {}, "true", "false" %>   </div>
 
 
             <div><%= f.label :email %><br />
@@ -32,20 +32,20 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+  <div><%= f.label :password, "Heslo" %> <i>(Nevyplňujte pokud nechcete měnit)</i><br />
   <%= f.password_field :password, :autocomplete => "off" %></div>
 
-  <div><%= f.label :password_confirmation %><br />
+  <div><%= f.label :password_confirmation, "Znovu heslo" %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+  <div><%= f.label :current_password, "Vaše heslo" %> <i>(potřebujeme vaše současné heslo pro potvrzení změn)</i><br />
   <%= f.password_field :current_password %></div>
 
-  <div><%= f.submit "Update" %></div>
+  <div><%= f.submit "Aktualizovat" %></div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<h3>Smazat můj účet</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
+<p> <%= button_to "Smazat účet", registration_path(resource_name), :data => { :confirm => "Opravdu smazat?" }, :method => :delete %></p>
 
-<%= link_to "Back", :back %>
+<%= link_to "Zpět", :back %>
