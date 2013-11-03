@@ -1,7 +1,9 @@
 FakturaApi::Application.routes.draw do
 
 
-  resources :invoices
+  resources :invoices  do
+    resources :pieces
+  end
   devise_for :users
 
     resources :clients

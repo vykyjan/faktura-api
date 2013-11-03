@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131015094950) do
+ActiveRecord::Schema.define(version: 20131102134219) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(version: 20131015094950) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "business_name"
+    t.string   "street"
+    t.string   "street2"
+    t.string   "city"
+    t.string   "PSC"
+    t.string   "IBAN"
+    t.string   "SWIFT"
   end
 
   add_index "clients", ["user_id"], name: "index_clients_on_user_id", using: :btree
@@ -34,9 +41,29 @@ ActiveRecord::Schema.define(version: 20131015094950) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "var_symbol"
+    t.string   "konst_symbol"
+    t.string   "numb_invoice"
+    t.date     "date_of_issue"
+    t.date     "date_of_the_chargeable_event"
+    t.date     "due_date"
+    t.date     "payment_date"
+    t.float    "total_price"
   end
 
   add_index "invoices", ["client_id"], name: "index_invoices_on_client_id", using: :btree
+
+  create_table "pieces", force: true do |t|
+    t.text     "text"
+    t.float    "number_piece"
+    t.float    "price_piece"
+    t.float    "DPH"
+    t.integer  "invoice_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pieces", ["invoice_id"], name: "index_pieces_on_invoice_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -58,6 +85,13 @@ ActiveRecord::Schema.define(version: 20131015094950) do
     t.string   "adress"
     t.string   "bank_account"
     t.string   "dph"
+    t.string   "business_name"
+    t.string   "street"
+    t.string   "street2"
+    t.string   "city"
+    t.string   "PSC"
+    t.string   "IBAN"
+    t.string   "SWIFT"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

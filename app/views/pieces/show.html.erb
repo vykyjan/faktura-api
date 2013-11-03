@@ -1,0 +1,13 @@
+<h1>Položka <%= @invoice.id %></h1>
+
+
+  <b>Položka:</b>
+<p>Text: <%= @piece.text %> </p>
+<p> Počet kusů: <%= @piece.number_piece %> </p>
+<p> Cena Kusu: <%= @piece.price_piece %>   </p>
+<p>  DPH: <%= @piece.DPH %>  </p>
+
+
+
+<%= link_to 'Změnit', edit_invoice_piece_path(@invoice, @piece), class: "btn " %> |
+<%= link_to 'Zpět', invoice_pieces_path(@invoice), class: "btn " %>

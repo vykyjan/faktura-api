@@ -6,6 +6,9 @@
     <div><%= f.label :name, "Jméno" %><br />
     <%= f.text_field :name %> </div>
 
+    <div><%= f.label :business_name, "Obchodní jméno" %><br />
+      <%= f.text_field :business_name %> </div>
+
     <div><%= f.label :register, "Zápis v rejstříku" %><br />
     <%= f.text_field :register %> </div>
 
@@ -15,11 +18,26 @@
     <div><%= f.label :dic, "DIČ" %><br />
     <%= f.text_field :dic %>   </div>
 
-    <div><%= f.label :adress, "Adresa" %><br />
-    <%= f.text_field :adress %>   </div>
+    <div><%= f.label :street, "Ulice" %><br />
+    <%= f.text_field :street %>   </div>
+
+    <div><%= f.label :street2, "Ulice2" %><br />
+      <%= f.text_field :street2 %>   </div>
+
+    <div><%= f.label :city, "Město" %><br />
+      <%= f.text_field :city %>   </div>
+
+    <div><%= f.label :PSC, "PSČ" %><br />
+      <%= f.text_field :PSC %>   </div>
 
     <div><%= f.label :bank_account, "Bankovní účet" %><br />
       <%= f.text_field :bank_account %>   </div>
+
+    <div><%= f.label :IBAN, "IBAN" %><br />
+      <%= f.text_field :IBAN %>   </div>
+
+    <div><%= f.label :SWIFT, "SWIFT" %><br />
+      <%= f.text_field :SWIFT %>   </div>
 
     <div><%= f.label :dph, "Plátce DPH" %><br />
      Ano <%= f.check_box :dph, {}, "true", "false" %>   </div>

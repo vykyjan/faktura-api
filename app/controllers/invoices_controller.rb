@@ -21,7 +21,9 @@ class InvoicesController < ApplicationController
 
   def show
     @invoice = Invoice.find(params[:id])
+
     @users = current_user[:id]
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -63,7 +65,7 @@ class InvoicesController < ApplicationController
   private
   def post_params
 
-    params.require(:invoice).permit(:description, :price, :client_id)
+    params.require(:invoice).permit(:description, :price, :client_id, :var_symbol, :konst_symbol, :numb_invoice, :date_of_issue, :date_of_the_chargeable_event, :due_date, :payment_date, :total_price)
   end
 
   def show_navbar

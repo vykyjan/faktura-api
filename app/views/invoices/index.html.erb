@@ -5,6 +5,15 @@
     <th>Jméno</th>
     <th>Popis</th>
     <th>Cena</th>
+    <th>Variabilní symbol</th>
+    <th>Konstantní symbol</th>
+    <th>Číslo faktury</th>
+    <th>Datum vystavení</th>
+    <th>Datum uskutečnění ZP</th>
+    <th>Datum splatnosti</th>
+    <th>Datum zaplacení</th>
+    <th>Cena celkem</th>
+
   </tr>
 
 
@@ -14,6 +23,16 @@
       <td><%= Client.find(invoice.client_id).name %></td>
         <td><%= invoice.description %></td>
         <td><%= invoice.price %></td>
+      <td><%= invoice.var_symbol %></td>
+      <td><%= invoice.konst_symbol %></td>
+      <td><%= invoice.numb_invoice %></td>
+      <td><%= invoice.date_of_issue %></td>
+      <td><%= invoice.date_of_the_chargeable_event %></td>
+      <td><%= invoice.due_date %></td>
+      <td><%= invoice.payment_date %></td>
+      <td><%= invoice.total_price %></td>
+
+      <td><%= link_to 'Přehled položek', invoice_pieces_path(invoice) %></td>
       <td><%= link_to 'Prohlédnout', invoice %></td>
       <td><%= link_to 'Změnit', edit_invoice_path(invoice) %></td>
       <td><%= link_to 'Smazat', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>

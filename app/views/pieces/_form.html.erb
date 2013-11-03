@@ -1,0 +1,35 @@
+<%= form_for([@invoice, @piece]) do |f| %>
+    <% if @piece.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@piece.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+          <ul>
+            <% @piece.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :text, "Text" %><br>
+      <%= f.text_field :text %>
+    </div>
+    <div class="field">
+      <%= f.label :number_piece, "Počet kusů" %><br>
+      <%= f.text_field :number_piece %>
+    </div>
+    <div class="field">
+      <%= f.label :price_piece, "Cena za kus" %><br>
+      <%= f.text_field :price_piece %>
+    </div>
+    <div class="field">
+      <%= f.label :DPH , "DPH"%><br>
+      <%= f.text_field :DPH %>
+    </div>
+
+
+    <div class="actions">
+      <%= f.submit "Nová položka" %>
+    </div>
+<% end %>

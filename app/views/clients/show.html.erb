@@ -6,8 +6,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Jméno:</strong>
   <%= @client.name %>
+</p>
+
+<p>
+  <strong>Obchodní jméno:</strong>
+  <%= @client.business_name %>
 </p>
 
 <p>
@@ -26,13 +31,38 @@
 </p>
 
 <p>
-  <strong>Adresa:</strong>
-  <%= @client.adress %>
+  <strong>Ulice:</strong>
+  <%= @client.street %>
+</p>
+
+<p>
+  <strong>Ulice2:</strong>
+  <%= @client.street2 %>
+</p>
+
+<p>
+  <strong>Město:</strong>
+  <%= @client.city %>
+</p>
+
+<p>
+  <strong>PSČ:</strong>
+  <%= @client.PSC %>
 </p>
 
 <p>
   <strong>Bankovní účet:</strong>
   <%= @client.bank_account %>
+</p>
+
+<p>
+  <strong>IBAN:</strong>
+  <%= @client.IBAN %>
+</p>
+
+<p>
+  <strong>SWIFT:</strong>
+  <%= @client.SWIFT %>
 </p>
 
 <p>

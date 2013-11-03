@@ -1,0 +1,27 @@
+<h1>Faktura#<%= @invoice.id  %></h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th>Počet kusů</th>
+    <th>Cena za kus</th>
+    <th>DPH</th>
+  </tr>
+
+  <% for piece in @pieces %>
+      <tr>
+        <td><%= piece.text %></td>
+        <td><%= piece.number_piece %></td>
+        <td><%= piece.price_piece %></td>
+        <td><%= piece.DPH %></td>
+        <td><%= link_to 'Prohlédnout', invoice_piece_path(@invoice, piece), class: "btn " %></td>
+        <td><%= link_to 'Změnit', edit_invoice_piece_path(@invoice, piece), class: "btn " %></td>
+        <td><%= link_to 'Smazat', invoice_piece_path(@invoice, piece), :confirm => 'Opravdu smazat?', :method => :delete, class: "btn " %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nová položka', new_invoice_piece_path(@invoice), class: "btn " %>
+<%= link_to 'Zpět na fakturu', @invoice, class: "btn " %>

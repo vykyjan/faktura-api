@@ -37,8 +37,40 @@
   <%= @invoice.description %>
 </br>
 
-  <b>Cena:</b>
-  <%= @invoice.price %>
+  <b>Variabilní symbol:</b>
+  <%= @invoice.var_symbol %>
+  </br>
+
+  <b>Konstantní symbol:</b>
+  <%= @invoice.konst_symbol %>
+  </br>
+
+  <b>číslo faktury:</b>
+  <%= @invoice.numb_invoice %>
+  </br>
+
+  <b>Datum vystavení:</b>
+  <%= @invoice.date_of_issue %>
+  </br>
+
+  <b>Datum uskutečnění zdanitelného plnění:</b>
+  <%= @invoice.date_of_the_chargeable_event %>
+  </br>
+
+  <b>Datum splatnosti:</b>
+  <%= @invoice.due_date %>
+  </br>
+
+  <b>Datum zaplacení:</b>
+  <%= @invoice.payment_date %>
+  </br>
+
+  <b>Cena celkem:</b>
+  <%= @invoice.total_price %>
+  </br>
+
+
+
 </br>  </div>
   <div class="small-4 columns">
 Prodávající </br>
@@ -67,7 +99,11 @@ Prodávající </br>
 
   <b>Bankovní účet:</b>
   <%= @current_user.bank_account %>   </br>
-  </div> </div>
+  </div>
+
+
+
+</div>
     <%= link_to "Stáhnout PDF", invoice_path(@invoice, :format => "pdf") %>
     <%= link_to "Zpět", invoices_path %>
     <%= link_to 'Změnit', edit_invoice_path %>
