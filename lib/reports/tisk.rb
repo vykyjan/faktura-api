@@ -3,15 +3,15 @@ require "prawn"
 require "prawn/layout"
 require "prawn/measurement_extensions"
 
+module Tisk
 
-
-  def invoice_one(package)
+  def invoice_one(invoice)
     # Rails.root.join("tmp/dodaci-listy.pdf")
     Prawn::Document.generate(Rails.root.join('tmp', "faktura.pdf"),:page_size   => "A4", :margin => [1.5.cm,1.5.cm,1.5.cm,1.5.cm],
       :info => {
-      :Title        => "#{package.vs}",
+      :Title        => "#{invoice.vs}",
       :Author       => "Fulfillment ELMS service",
-      :Subject      => "Faktura #{package.vs}",
+      :Subject      => "Faktura #{invoice.vs}",
       :Keywords     => "elms, fulfillment",
       :Creator      => "Fulfillment ELMS service", 
       :Producer     => "Prawn",
@@ -38,7 +38,7 @@ require "prawn/measurement_extensions"
       end
 
       grid([0,1], [7,1]).bounding_box do
-        text "FAKTURA - #{package.vs}", :size => 18, :align => :right
+        text "FAKTURA - #{invoice.vs}", :size => 18, :align => :right
         text "Daňový doklad", :size => 12, :align => :right
         move_down font.height
         table [ 
@@ -281,6 +281,4 @@ require "prawn/measurement_extensions"
   end
 
 
-
-
- 
+end

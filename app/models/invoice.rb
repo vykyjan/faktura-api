@@ -4,9 +4,13 @@ class Invoice < ActiveRecord::Base
 has_many :pieces
 
 
+
  # before_create :set_per_user_id
 
-  private
+  def total_price
+    pieces.sum(&:total_price_piece)
+  end
+
  # def set_per_user_id
   #  val = user.projects.maximum(:document_id)
    # self.document_id = val + 1

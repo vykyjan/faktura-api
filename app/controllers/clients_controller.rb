@@ -1,5 +1,5 @@
 class ClientsController < ApplicationController
-  before_action :set_client, only: [:show, :edit, :update, :destroy]
+
 
   # GET /clients
   # GET /clients.json
@@ -57,12 +57,12 @@ class ClientsController < ApplicationController
   # DELETE /clients/1
   # DELETE /clients/1.json
   def destroy
-    @user = User.find(params[:user_id])
+    @user = current_user
     @client = Client.find(params[:id])
     @client.destroy
 
     respond_to do |format|
-      format.html { redirect_to user_clients_path(@user) }
+      format.html { redirect_to clients_path(@user) }
       format.xml  { head :ok }
     end
   end
@@ -70,12 +70,10 @@ class ClientsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_client
-      @client = Client.find(params[:id])
-    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:name, :register, :ic, :dic, :adress, :bank_account, :hdp, :user_id)
+      params.require(:client).permit(:name, :business_name, :register, :ic, :dic, :street, :street2, :city, :PSC, :IBAN, :SWIFT, :bank_account, :hdp, :user_id)
     end
 end

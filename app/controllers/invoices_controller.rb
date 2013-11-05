@@ -1,5 +1,7 @@
+require "reports/tisk"
 class InvoicesController < ApplicationController
   before_filter :show_navbar
+  helper Tisk
 
 
   def index
@@ -55,11 +57,12 @@ class InvoicesController < ApplicationController
     redirect_to invoices_path
   end
 
-  def download
-    kit = PDFKit.new(render_to_string(:show, :layout => false))
-    kit.stylesheets << Rails.application.assets['application.css'].pathname
-    kit.to_file("#{file_date_string}.pdf")
-    # snip
+
+
+  def tisk
+    @invoice = Invoice.find(params[:id])
+    tisk_one(tisk)
+    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "#{invoice.vs}.pdf", :type => "application/pdf")
   end
 
   private

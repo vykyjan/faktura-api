@@ -27,11 +27,17 @@
     <% @clients.each do |client| %>
       <tr>
         <td><%= client.name %></td>
+        <td><%= client.business_name %></td>
         <td><%= client.register %></td>
         <td><%= client.ic %></td>
         <td><%= client.dic %></td>
-        <td><%= client.adress %></td>
+        <td><%= client.street %></td>
+        <td><%= client.street2 %></td>
+        <td><%= client.city %></td>
+        <td><%= client.PSC %></td>
         <td><%= client.bank_account %></td>
+        <td><%= client.IBAN %></td>
+        <td><%= client.SWIFT %></td>
         <td><%= client.hdp %></td>
 
         <td><%= link_to 'Prohlédnout', client_path( client), class: "btn " %></td>

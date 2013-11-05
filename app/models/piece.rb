@@ -3,4 +3,8 @@ class Piece < ActiveRecord::Base
 
 
 
+   def total_price_piece
+     number_piece * price_piece
+   end
+
 end

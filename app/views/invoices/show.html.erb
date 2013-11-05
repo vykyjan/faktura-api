@@ -104,7 +104,7 @@ Prodávající </br>
 
 
 </div>
-    <%= link_to "Stáhnout PDF", invoice_path(@invoice, :format => "pdf") %>
+<%= link_to "Stahnout", :action => "tisk", :format => :pdf %>
     <%= link_to "Zpět", invoices_path %>
     <%= link_to 'Změnit', edit_invoice_path %>
 

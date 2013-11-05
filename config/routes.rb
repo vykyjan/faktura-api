@@ -2,11 +2,17 @@ FakturaApi::Application.routes.draw do
 
 
   resources :invoices  do
-    resources :pieces
+    get "tisk", :on => :member
+    resources :pieces do
+      collection do
+        get 'download_pdf'
+      end
+    end
   end
   devise_for :users
 
     resources :clients
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

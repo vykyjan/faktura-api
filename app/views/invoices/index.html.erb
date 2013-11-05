@@ -13,6 +13,8 @@
     <th>Datum splatnosti</th>
     <th>Datum zaplacení</th>
     <th>Cena celkem</th>
+    <th>Text</th>
+    <th>Počet kusů</th>
 
   </tr>
 
@@ -31,6 +33,8 @@
       <td><%= invoice.due_date %></td>
       <td><%= invoice.payment_date %></td>
       <td><%= invoice.total_price %></td>
+      <td><%= invoice.pieces.last.try(:text) %></td>
+      <td><%= invoice.pieces.last.try(:number_piece) %></td>
 
       <td><%= link_to 'Přehled položek', invoice_pieces_path(invoice) %></td>
       <td><%= link_to 'Prohlédnout', invoice %></td>
@@ -38,6 +42,5 @@
       <td><%= link_to 'Smazat', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
       </tr>
   <% end %>
-
 </table>
 <%= link_to "Nová faktura", new_invoice_path %>

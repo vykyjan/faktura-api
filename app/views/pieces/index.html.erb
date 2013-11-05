@@ -6,6 +6,7 @@
     <th>Počet kusů</th>
     <th>Cena za kus</th>
     <th>DPH</th>
+    <th>Cena položky</th>
   </tr>
 
   <% for piece in @pieces %>
@@ -14,6 +15,7 @@
         <td><%= piece.number_piece %></td>
         <td><%= piece.price_piece %></td>
         <td><%= piece.DPH %></td>
+        <td><%= piece.total_price_piece %></td>
         <td><%= link_to 'Prohlédnout', invoice_piece_path(@invoice, piece), class: "btn " %></td>
         <td><%= link_to 'Změnit', edit_invoice_piece_path(@invoice, piece), class: "btn " %></td>
         <td><%= link_to 'Smazat', invoice_piece_path(@invoice, piece), :confirm => 'Opravdu smazat?', :method => :delete, class: "btn " %></td>

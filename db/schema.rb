@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131102134219) do
+ActiveRecord::Schema.define(version: 20131104103633) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20131102134219) do
     t.integer  "invoice_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "total_price_piece"
   end
 
   add_index "pieces", ["invoice_id"], name: "index_pieces_on_invoice_id", using: :btree
