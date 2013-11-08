@@ -7,4 +7,6 @@ class Piece < ActiveRecord::Base
      number_piece * price_piece
    end
 
+
+
 end

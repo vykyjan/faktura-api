@@ -1,4 +1,8 @@
+require "reports/tisk"
+require 'prawn'
 class PiecesController < ApplicationController
+  helper Tisk
+  include Tisk
   # GET /orders/1/items
   def index
     @invoice = Invoice.find(params[:invoice_id])

@@ -101,6 +101,8 @@ Prodávající </br>
   <%= @current_user.bank_account %>   </br>
   </div>
 
+  <b>počet kusů:</b>
+  <%= @invoice.pieces.last.try(:number_piece) %>    </br>
 
 
 </div>

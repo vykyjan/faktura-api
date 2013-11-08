@@ -1,7 +1,9 @@
 require "reports/tisk"
+require 'prawn'
 class InvoicesController < ApplicationController
   before_filter :show_navbar
   helper Tisk
+  include Tisk
 
 
   def index
@@ -60,9 +62,12 @@ class InvoicesController < ApplicationController
 
 
   def tisk
-    @invoice = Invoice.find(params[:id])
-    tisk_one(tisk)
-    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "#{invoice.vs}.pdf", :type => "application/pdf")
+    invoice = Invoice.find(params[:id])
+
+
+
+    invoice_one(invoice, current_user)
+    send_file(Rails.root.join('tmp', "tisk.rb"), :filename => "x.pdf", :type => "application/pdf")
   end
 
   private
