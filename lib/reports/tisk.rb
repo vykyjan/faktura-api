@@ -62,11 +62,11 @@ module Tisk
       grid([9,0], [13,0]).bounding_box do
         text "Dodavatel", :style => :bold
         text "#{current_user.name}"
-        text "#{}"
-        text "#{} #{}"
+        text "#{current_user.street}"
+        text "#{current_user.PSC} #{current_user.street2}"
         move_down font.height
-        text "IČ: #{}"
-        text "DIČ: #{}"
+        text "IČ: #{current_user.ic}"
+        text "DIČ: #{current_user.dic}"
       end
 
       grid([9,1], [13,1]).bounding_box do
@@ -94,7 +94,10 @@ module Tisk
         total = 0
         dph = {}
         invoice.pieces.each do |p|
+          if invoice.client.hdp
+            data.push([p.text, p.number_piece,p.DPH, p.price_piece, p.total_price_piece])
 
+          end
         end
         table(data,
               :cell_style => { :padding => [0,0,0,10], :borders => [],:align => :right},
@@ -112,12 +115,13 @@ module Tisk
           zaklad = 0
           dph.each do |k,v|
             zaklad += (v.to_f / (1 + (k.to_f/100)))
-            data.push(["DPH #{k.to_f}% ", sprintf("%.2f " + invoice.piece.last.try.(:text),v.to_f-zaklad)])
+            data.push(["DPH #{k.to_f}% ", sprintf("%.2f " + invoice.total_price,v.to_f-zaklad)])
           end
+          data.insert(0,["Celkem bez DPH", sprintf("%.2f " + invoice.total_price,zaklad)])
 
         end
         data.push([" ", " "])
-        data.push(["<font size='16'>Celkem</font>", "<font size='16'>" + sprintf("%.2f " + invoice,total_price) + "</font>"])
+        data.push(["<font size='16'>Celkem</font>", "<font size='16'>" + sprintf("%.2f " + invoice.text,total) + "</font>"])
         table(data, :cell_style => { :padding => [0,0,0,10], :borders => [],:align => :right, :inline_format => true}, :position => :right)
       end
 

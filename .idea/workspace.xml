@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/piece.rb" afterPath="$PROJECT_DIR$/app/models/piece.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pieces_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pieces_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/show.html.erb" afterPath="$PROJECT_DIR$/app/views/invoices/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/reports/tisk.rb" afterPath="$PROJECT_DIR$/lib/reports/tisk.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,7 +30,7 @@
     <file path="/clients_controller.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383564974704" ignored="false" />
     <file path="/application.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383636576116" ignored="false" />
     <file path="/environment.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383636104251" ignored="false" />
-    <file path="/tisk.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383898247002" ignored="false" />
+    <file path="/tisk.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383910436332" ignored="false" />
     <file path="$USER_HOME$/Dokumenty/repo/svatba/app/views/home/kontakty.html.erb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383817605516" ignored="false" />
     <file path="/kontakty.html.erb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1383817449250" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,7 +109,7 @@
       <file leaf-file-name="tisk.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="110" selection-start="4523" selection-end="4523" vertical-scroll-proportion="0.0">
+            <state line="119" column="80" selection-start="4661" selection-end="4661" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +118,7 @@
       <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="16" selection-start="1710" selection-end="1718" vertical-scroll-proportion="0.72064054">
+            <state line="23" column="51" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-0.28113878">
               <folding />
             </state>
           </provider>
@@ -683,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/piece.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -718,16 +707,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/piece.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="110" selection-start="4523" selection-end="4523" vertical-scroll-proportion="0.0">
+        <state line="119" column="80" selection-start="4661" selection-end="4661" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="16" selection-start="1710" selection-end="1718" vertical-scroll-proportion="0.72064054">
+        <state line="23" column="51" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-0.28113878">
           <folding />
         </state>
       </provider>
