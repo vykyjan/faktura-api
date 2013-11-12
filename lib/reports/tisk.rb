@@ -93,10 +93,18 @@ module Tisk
         end
         total = 0
         dph = {}
+
         invoice.pieces.each do |p|
           if invoice.client.hdp
-            data.push([p.text, p.number_piece,p.DPH, p.price_piece, p.total_price_piece])
-
+            data.push([p.text, p.number_piece, p.total_price_piece,sprintf("%.2f",p.price_piece),sprintf("%.2f",p.number_piece * p.price_piece)])
+            if dph["#{p.total_price_piece}"].nil?
+              dph["#{p.total_price_piece}"] = 0
+            end
+            dph["#{p.total_price_piece}"] += p.price_piece * p.number_piece
+            total += p.price_piece * p.number_piece
+          else
+            data.push([p.text, p.number_piece, " ",sprintf("%.2f",p.price_piece),sprintf("%.2f",p.price_piece * p.number_piece)])
+            total += p.price_piece * p.number_piece
           end
         end
         table(data,
@@ -115,13 +123,12 @@ module Tisk
           zaklad = 0
           dph.each do |k,v|
             zaklad += (v.to_f / (1 + (k.to_f/100)))
-            data.push(["DPH #{k.to_f}% ", sprintf("%.2f " + invoice.total_price,v.to_f-zaklad)])
+            data.push(["DPH #{k.to_f}% ", sprintf("%.2f " + invoice.piece.text,v.to_f-zaklad)])
           end
-          data.insert(0,["Celkem bez DPH", sprintf("%.2f " + invoice.total_price,zaklad)])
-
+          data.insert(0,["Celkem bez DPH", sprintf("%.2f " + invoice.piece.text,zaklad)])
         end
         data.push([" ", " "])
-        data.push(["<font size='16'>Celkem</font>", "<font size='16'>" + sprintf("%.2f " + invoice.text,total) + "</font>"])
+        data.push(["<font size='16'>Celkem</font>", "<font size='16'>" + sprintf("%.2f " + package.order.currency.name,total) + "</font>"])
         table(data, :cell_style => { :padding => [0,0,0,10], :borders => [],:align => :right, :inline_format => true}, :position => :right)
       end
 

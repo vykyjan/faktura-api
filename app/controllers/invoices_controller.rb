@@ -67,7 +67,7 @@ class InvoicesController < ApplicationController
 
 
     invoice_one(invoice, current_user)
-    send_file(Rails.root.join('tmp', "tisk.rb"), :filename => "x.pdf", :type => "application/pdf")
+    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "output.pdf", :type => "application/pdf")
   end
 
   private
