@@ -1,3 +1,4 @@
+# coding: utf-8
 require "reports/tisk"
 require 'prawn'
 class InvoicesController < ApplicationController
