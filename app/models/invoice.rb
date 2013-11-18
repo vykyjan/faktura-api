@@ -14,12 +14,19 @@ has_many :pieces
 
 
  def create_numb_invoice
-   val = user.invoices.maximum(:numb_invoice)
-   if val ==
-     val = 0
-   end
-   self.numb_invoice = val + 1
+     val = user.invoices.maximum(:numb_invoice)
+     if val.nil?
+      self.numb_invoice = 1
+    else
+      self.numb_invoice = val + 1
+    end
+
+
+
+
  end
+
+
 
 
 end
