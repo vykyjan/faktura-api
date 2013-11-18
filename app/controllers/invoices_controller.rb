@@ -8,7 +8,7 @@ class InvoicesController < ApplicationController
 
 
   def index
-    @invoices = Invoice.all
+    @invoices = current_user.invoices
     @clients = Client.all
   end
 
@@ -18,7 +18,7 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    @invoice = Invoice.new(post_params)
+    @invoice = current_user.invoices.new(post_params)
 
 
     @invoice.save
@@ -47,7 +47,7 @@ class InvoicesController < ApplicationController
   def update
     @invoice = Invoice.find(params[:id])
 
-    if @invoice.update(params[:invoice].permit(:description, :price))
+    if @invoice.update(post_params)
       redirect_to @invoice
     else
       render 'edit'
@@ -73,7 +73,7 @@ class InvoicesController < ApplicationController
   private
   def post_params
 
-    params.require(:invoice).permit(:description, :price, :client_id, :var_symbol, :konst_symbol, :numb_invoice, :date_of_issue, :date_of_the_chargeable_event, :due_date, :payment_date, :total_price)
+    params.require(:invoice).permit(:description, :price, :client_id, :user_id, :var_symbol, :konst_symbol, :numb_invoice, :date_of_issue, :date_of_the_chargeable_event, :due_date, :payment_date, :total_price)
   end
 
   def show_navbar

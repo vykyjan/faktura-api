@@ -38,7 +38,7 @@ module Tisk
       end
 
       grid([0,1], [7,1]).bounding_box do
-        text "FAKTURA - #{invoice.id}", :size => 18, :align => :right
+        text "FAKTURA - #{invoice.numb_invoice}", :size => 18, :align => :right
         text "Daňový doklad", :size => 12, :align => :right
         move_down font.height
         table [
@@ -176,7 +176,7 @@ module Tisk
         end
 
         grid([0,1], [7,1]).bounding_box do
-          text "FAKTURA - #{invoice.id}", :size => 18, :align => :right
+          text "FAKTURA - #{invoice.numb_invoice}", :size => 18, :align => :right
           text "Daňový doklad", :size => 12, :align => :right
           move_down font.height
           table [

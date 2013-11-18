@@ -1,10 +1,10 @@
 class Invoice < ActiveRecord::Base
   belongs_to :client
-
+  belongs_to :user
 
 has_many :pieces
 
-  before_create :numb_invoice
+  before_create :create_numb_invoice
 
  # before_create :set_per_user_id
 
@@ -13,10 +13,13 @@ has_many :pieces
   end
 
 
-  def numb_invoice
-    val = @invoice.maximum(:numb_invoice)
-    self.numb_invoice = val + 1
-  end
+ def create_numb_invoice
+   val = user.invoices.maximum(:numb_invoice)
+   if val ==
+     val = 0
+   end
+   self.numb_invoice = val + 1
+ end
 
 
 end
