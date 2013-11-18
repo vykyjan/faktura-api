@@ -20,6 +20,7 @@ class InvoicesController < ApplicationController
   def create
     @invoice = Invoice.new(post_params)
 
+
     @invoice.save
     redirect_to @invoice
   end
@@ -28,7 +29,7 @@ class InvoicesController < ApplicationController
     @invoice = Invoice.find(params[:id])
 
     @users = current_user[:id]
-
+    @pieces = @invoice.pieces.all
 
     respond_to do |format|
       format.html # show.html.erb
@@ -64,8 +65,6 @@ class InvoicesController < ApplicationController
 
   def tisk
     invoice = Invoice.find(params[:id])
-
-
 
     invoice_one(invoice, current_user)
     send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "output.pdf", :type => "application/pdf")

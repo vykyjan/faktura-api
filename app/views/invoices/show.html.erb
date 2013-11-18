@@ -32,7 +32,8 @@
   <%= @invoice.client.bank_account %>
 </br>
 </div>
-<div class="small-3 columns">
+<div class="small-4 columns">
+
   <b>Popis:</b>
   <%= @invoice.description %>
 </br>
@@ -99,12 +100,16 @@ Prodávající </br>
 
   <b>Bankovní účet:</b>
   <%= @current_user.bank_account %>   </br>
-  </div>
+  </div>        </br>
+  <div class="small-4 columns">
+  <b>Položky:</b>
 
-  <b>počet kusů:</b>
-  <%= @invoice.pieces.last.try(:number_piece) %>    </br>
 
+  <% @invoice.pieces.each do |piece| %>
+  <%= piece.text %>
+  <% end %>
 
+</div>
 </div>
 <%= link_to "Stahnout", :action => "tisk", :format => :pdf %>
     <%= link_to "Zpět", invoices_path %>

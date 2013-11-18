@@ -122,8 +122,10 @@ module Tisk
         if invoice.client.hdp
           zaklad = 0
           dph.each do |k,v|
-            zaklad += (v.to_f / (1 + (k.to_f/100)))
-            data.push(["DPH #{k.to_f}% ", sprintf("%.2f Kč " ,v.to_f-zaklad)])
+            dilci_zaklad = (v.to_f/(1+(k.to_f/100)))
+            data.push (["DPH #{k.to_f}%", sprintf("%.2f Kč" , v.to_f-dilci_zaklad)])
+           zaklad += (v.to_f / (1 + (k.to_f/100)))
+
           end
           data.insert(0,["Celkem bez DPH", sprintf("%.2f Kč " ,zaklad)])
         end

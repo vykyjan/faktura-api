@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131104103633) do
+ActiveRecord::Schema.define(version: 20131118080220) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20131104103633) do
     t.datetime "updated_at"
     t.string   "var_symbol"
     t.string   "konst_symbol"
-    t.string   "numb_invoice"
+    t.integer  "numb_invoice"
     t.date     "date_of_issue"
     t.date     "date_of_the_chargeable_event"
     t.date     "due_date"

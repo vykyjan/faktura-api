@@ -1,9 +1,10 @@
 class Invoice < ActiveRecord::Base
   belongs_to :client
 
+
 has_many :pieces
 
-
+  before_create :numb_invoice
 
  # before_create :set_per_user_id
 
@@ -11,10 +12,11 @@ has_many :pieces
     pieces.sum(&:total_price_piece)
   end
 
- # def set_per_user_id
-  #  val = user.projects.maximum(:document_id)
-   # self.document_id = val + 1
- # end
+
+  def numb_invoice
+    val = @invoice.maximum(:numb_invoice)
+    self.numb_invoice = val + 1
+  end
 
 
 end
