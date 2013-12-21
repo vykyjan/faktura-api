@@ -12,6 +12,7 @@ gem 'devise'
 gem 'simple_form'
 gem "prawnto_2", :require => "prawnto"
 gem 'prawn', git: 'https://github.com/prawnpdf/prawn.git'
+gem 'sendgrid'
 
 
 group :test do
