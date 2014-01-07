@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -113,7 +112,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="3" selection-start="3647" selection-end="3647" vertical-scroll-proportion="0.8131673">
+            <state line="80" column="90" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.54626334">
               <folding />
             </state>
           </provider>
@@ -1013,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="3" selection-start="3647" selection-end="3647" vertical-scroll-proportion="0.8131673">
+        <state line="80" column="90" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.54626334">
           <folding />
         </state>
       </provider>
