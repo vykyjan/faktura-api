@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="faktura-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,6 +54,7 @@
     <file path="/user.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1384787695895" ignored="false" />
     <file path="/20131118080220_change_number_invoice_to_invoice.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1384763519632" ignored="false" />
     <file path="/client.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1384777022828" ignored="false" />
+    <file path="/devise.rb" changelist="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" time="1389109758826" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,19 +101,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="48" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="14" column="33" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38251367">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="47" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.78647685">
+            <state line="89" column="47" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,9 +195,9 @@
         <option value="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/invoice.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
       </list>
     </option>
   </component>
@@ -996,9 +997,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="48" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+        <state line="89" column="47" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1010,9 +1011,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="47" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.78647685">
+        <state line="14" column="33" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38251367">
           <folding />
         </state>
       </provider>
