@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09b56f21-81ea-4f54-bfbf-c4718ba31ac0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="faktura-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,7 +103,7 @@
       <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38251367">
+            <state line="14" column="2" selection-start="785" selection-end="785" vertical-scroll-proportion="0.38251367">
               <folding />
             </state>
           </provider>
@@ -1013,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38251367">
+        <state line="14" column="2" selection-start="785" selection-end="785" vertical-scroll-proportion="0.38251367">
           <folding />
         </state>
       </provider>
