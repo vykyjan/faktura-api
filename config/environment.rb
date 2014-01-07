@@ -7,7 +7,7 @@ ActionMailer::Base.smtp_settings = {
     :port           => '587',
     :authentication => :plain,
     :user_name      => ENV['faktura-api'],
-    :password       => ENV['faktura2014'],
+    :password       => ENV['qwerty'],
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
 }
