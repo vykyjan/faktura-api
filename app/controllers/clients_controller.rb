@@ -29,7 +29,7 @@ class ClientsController < ApplicationController
 
     # For URL like /orders/1/items/2/edit
     # Get item id=2 for order 1
-    @client = @user.clients.find(params[:id])
+    @client = Client.find(params[:id])
   end
 
   # POST /clients
@@ -46,12 +46,14 @@ class ClientsController < ApplicationController
   def update
     @user = User.find(params[:id])
     @client = Client.find(params[:id])
-    if @client.update_attributes(params[:client])
+    if @client.update(client_params)
       # Save the item successfully
-      redirect_to user_client_url(@user, @client)
+      redirect_to @client
     else
       render :action => "edit"
     end
+
+
   end
 
   # DELETE /clients/1
@@ -74,6 +76,6 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:name, :business_name, :register, :ic, :dic, :street, :street2, :city, :PSC, :IBAN, :SWIFT, :bank_account, :hdp, :user_id)
+      params.require(:client).permit(:name, :business_name, :register, :ic, :dic, :street, :street2, :city, :PSC, :IBAN, :SWIFT, :bank_account, :hdp, :user_id, :email)
     end
 end

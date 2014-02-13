@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Dobrý den, <%= @clients.name %></h1>
+<p>
+  připomínám se s úhradou faktury č.<%= invoice.numb_invoice %> na částku <%= invoice.total_price %> Kč. Faktura je nyní po splatnosti, prosím proto o neprodlenou úhradu.<br>
+<br><br>
+  Děkuji<br>
+  <%= current_user.name %>
+</p>
+<p>
+  S Pozdravem
+</p>
+
+</body>
+</html>

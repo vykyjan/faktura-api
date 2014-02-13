@@ -3,6 +3,7 @@ FakturaApi::Application.routes.draw do
 
   resources :invoices  do
     get "tisk", :on => :member
+    get "mail", :on => :member
     resources :pieces do
       collection do
         get 'download_pdf'

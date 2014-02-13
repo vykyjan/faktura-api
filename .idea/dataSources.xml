@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2233667325">
+    <data-source source="LOCAL" name="Rails faktura-api: development" uuid="cc03f530-5cf3-44d0-873d-876389866ec6">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:faktura_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc2dfcbdfc4dfcfdfd9df9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails faktura-api: test" uuid="a5c0071a-f705-40dc-bc88-792c76f70dea">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:faktura_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc2dfcbdfc4dfcfdfd9df9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails faktura-api: production" uuid="df3799e2-a84d-4be9-980d-95258bc574f9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:faktura_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc2dfcbdfc4dfcfdfd9df9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
