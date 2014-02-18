@@ -2,186 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7eaf7f9-8fe1-44fa-bf3b-e55124063123" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/hanes.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/.keep" afterPath="$PROJECT_DIR$/app/mailers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/.keep" afterPath="$PROJECT_DIR$/app/models/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/.keep" afterPath="$PROJECT_DIR$/lib/assets/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/.keep" afterPath="$PROJECT_DIR$/lib/tasks/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/.keep" afterPath="$PROJECT_DIR$/log/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="$PROJECT_DIR$/test/controllers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="$PROJECT_DIR$/test/fixtures/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="$PROJECT_DIR$/test/helpers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="$PROJECT_DIR$/test/integration/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="$PROJECT_DIR$/test/mailers/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/test/models/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-Bold.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-Bold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-BoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraBold.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-ExtraBold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-ExtraBoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-Italic.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-Italic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-Light.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-Light.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-LightItalic.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-LightItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-Regular.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-Regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-Semibold.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-Semibold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.ttf" afterPath="$PROJECT_DIR$/fonts/OpenSans-SemiboldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/reports/x.pdf" afterPath="$PROJECT_DIR$/lib/reports/x.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rspec" afterPath="$PROJECT_DIR$/.rspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131011104609_devise_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20131011104609_devise_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131014063201_add_details_to_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20131014063201_add_details_to_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131015074045_create_clients.rb" afterPath="$PROJECT_DIR$/db/migrate/20131015074045_create_clients.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131015094950_create_invoices.rb" afterPath="$PROJECT_DIR$/db/migrate/20131015094950_create_invoices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131101132519_add_business_name_and_street_and_street2_and_city_and_psc_and_iban_and_swift_to_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20131101132519_add_business_name_and_street_and_street2_and_city_and_psc_and_iban_and_swift_to_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131101134649_add_business_name_and_street_and_street2_and_city_and_psc_and_iban_and_swift_to_client.rb" afterPath="$PROJECT_DIR$/db/migrate/20131101134649_add_business_name_and_street_and_street2_and_city_and_psc_and_iban_and_swift_to_client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131101155008_add_var_symbol_and_kons_symbol_and_cislo_faktury_and_datum_vystaveni_and_datum_uskutecneni_zp_and_datum_splatnosti_and_datum_zaplaceni_and_cena_and_to_invoice.rb" afterPath="$PROJECT_DIR$/db/migrate/20131101155008_add_var_symbol_and_kons_symbol_and_cislo_faktury_and_datum_vystaveni_and_datum_uskutecneni_zp_and_datum_splatnosti_and_datum_zaplaceni_and_cena_and_to_invoice.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131102134219_create_pieces.rb" afterPath="$PROJECT_DIR$/db/migrate/20131102134219_create_pieces.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131104103633_add_totat_price_piece.rb" afterPath="$PROJECT_DIR$/db/migrate/20131104103633_add_totat_price_piece.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131118080220_change_number_invoice_to_invoice.rb" afterPath="$PROJECT_DIR$/db/migrate/20131118080220_change_number_invoice_to_invoice.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131118115628_add_user_id_to_invoices.rb" afterPath="$PROJECT_DIR$/db/migrate/20131118115628_add_user_id_to_invoices.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140107200156_add_phone_to_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20140107200156_add_phone_to_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pieces/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/pieces/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/client.rb" afterPath="$PROJECT_DIR$/app/models/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/client_spec.rb" afterPath="$PROJECT_DIR$/spec/models/client_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/clients.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/clients.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/clients.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/clients.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/clients_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/clients_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/clients_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/clients_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/clients_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/clients_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/clients_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/clients_helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/routing/clients_routing_spec.rb" afterPath="$PROJECT_DIR$/spec/routing/clients_routing_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/clients_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/clients_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/invoices/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pieces/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/pieces/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/clients/edit.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/clients/edit.html.erb_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/faktura-api.iml" afterPath="$PROJECT_DIR$/.idea/faktura-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/foundation_and_overrides.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/index.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/index.html.erb" afterPath="$PROJECT_DIR$/app/views/invoices/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pieces/index.html.erb" afterPath="$PROJECT_DIR$/app/views/pieces/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/clients/index.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/clients/index.html.erb_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/clients/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/invoice.rb" afterPath="$PROJECT_DIR$/app/models/invoice.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/invoice_spec.rb" afterPath="$PROJECT_DIR$/spec/models/invoice_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/invoices.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/invoices.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/invoices.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/invoices.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/invoice_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/invoice_mailer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/invoices_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/invoices_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/invoices_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/invoices_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/invoices_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/invoices_helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/new.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/new.html.erb" afterPath="$PROJECT_DIR$/app/views/invoices/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pieces/new.html.erb" afterPath="$PROJECT_DIR$/app/views/pieces/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/clients/new.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/clients/new.html.erb_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/invoices/new.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/invoices/new.html.erb_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/piece.rb" afterPath="$PROJECT_DIR$/app/models/piece.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/piece_spec.rb" afterPath="$PROJECT_DIR$/spec/models/piece_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pieces.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pieces.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pieces.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/pieces.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pieces_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pieces_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/pieces_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/pieces_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/pieces_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/pieces_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/pieces_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/pieces_helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/registrations.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/registrations.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/registrations.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/registrations.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/registrations_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/registrations_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/registrations_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/registrations_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/registrations_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/registrations_helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/show.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/show.html.erb" afterPath="$PROJECT_DIR$/app/views/invoices/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pieces/show.html.erb" afterPath="$PROJECT_DIR$/app/views/pieces/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/clients/show.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/clients/show.html.erb_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/clients/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/show.pdf.prawn" afterPath="$PROJECT_DIR$/app/views/invoices/show.pdf.prawn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/simple_form.en.yml" afterPath="$PROJECT_DIR$/config/locales/simple_form.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_pages.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/static_pages.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/static_pages.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/static_pages_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/static_pages_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/static_pages_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/static_pages_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/static_pages_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/static_pages_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/reports/tisk.rb" afterPath="$PROJECT_DIR$/lib/reports/tisk.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/user_registration_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/user_registration_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/users_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/users_helper_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
     </list>
     <ignored path="faktura-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -207,14 +32,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="41" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-7.3333335" vertical-offset="1836" max-vertical-offset="2250">
-              <folding>
-                <marker date="1391972024532" expanded="true" signature="49:1827" placeholder="..." />
-                <marker date="1391972024532" expanded="true" signature="79:507" placeholder="..." />
-                <marker date="1391972024532" expanded="true" signature="537:1166" placeholder="..." />
-                <marker date="1391972024532" expanded="true" signature="1198:1675" placeholder="..." />
-                <marker date="1391972024532" expanded="true" signature="1720:1820" placeholder="..." />
-              </folding>
+            <state line="113" column="52" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-8.0" vertical-offset="1818" max-vertical-offset="2232">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -240,7 +59,7 @@
       <file leaf-file-name="invoice_mailer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mailers/invoice_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="8" column="112" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
               <folding />
             </state>
           </provider>
@@ -249,7 +68,7 @@
       <file leaf-file-name="reminder.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/reminder.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="385" selection-end="385" vertical-scroll-proportion="0.5308311" vertical-offset="0" max-vertical-offset="432">
+            <state line="11" column="26" selection-start="385" selection-end="385" vertical-scroll-proportion="0.37265417" vertical-offset="59" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -258,7 +77,7 @@
       <file leaf-file-name="mail.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/invoices/mail.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+            <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
               <folding />
             </state>
           </provider>
@@ -267,7 +86,7 @@
       <file leaf-file-name="invoice_info.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/invoice_info.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="0" selection-end="273" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="378">
+            <state line="15" column="7" selection-start="0" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="378">
               <folding />
             </state>
           </provider>
@@ -276,7 +95,7 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="23" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1980">
+            <state line="69" column="0" selection-start="2285" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -285,7 +104,16 @@
       <file leaf-file-name="tisk.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="5328">
+            <state line="146" column="0" selection-start="5924" selection-end="5924" vertical-scroll-proportion="0.0" vertical-offset="2430" max-vertical-offset="5526">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoices_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1926">
               <folding />
             </state>
           </provider>
@@ -306,23 +134,23 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/invoices/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/invoices/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/invoices/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/invoice_mailer/invoice_info.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/invoices/mail.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/invoice_reminder.rb" />
         <option value="$PROJECT_DIR$/app/views/invoice_reminder/reminder.html.erb" />
-        <option value="$PROJECT_DIR$/app/mailers/invoice_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/invoice_mailer/reminder.html.erb" />
+        <option value="$PROJECT_DIR$/lib/reports/tisk.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/invoice_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/views/invoices/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -350,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -602,6 +429,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,6 +524,26 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -760,7 +608,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="7" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -768,7 +616,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24597365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -776,12 +624,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884902" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -798,9 +646,60 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/invoices_controller.rb</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/mailers/invoice_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/reminder.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/mail.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/invoice_info.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="0" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="23" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="5328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="1674">
@@ -818,13 +717,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="113" column="41" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="2250">
-          <folding>
-            <marker date="1391972024532" expanded="true" signature="49:1827" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="79:507" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="537:1166" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1198:1675" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1720:1820" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -899,13 +792,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="113" column="41" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0" vertical-offset="1782" max-vertical-offset="2250">
-          <folding>
-            <marker date="1391972024532" expanded="true" signature="49:1827" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="79:507" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="537:1166" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1198:1675" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1720:1820" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -958,9 +845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/clients_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566">
-          <folding />
-        </state>
+        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/index.html.erb">
@@ -982,9 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/clients_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566">
-          <folding />
-        </state>
+        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/index.html.erb">
@@ -1006,9 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/clients_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1566">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/edit.html.erb">
@@ -1030,9 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/clients_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="-0.935" vertical-offset="734" max-vertical-offset="1566">
-          <folding />
-        </state>
+        <state line="20" column="9" selection-start="278" selection-end="278" vertical-scroll-proportion="-0.935" vertical-offset="734" max-vertical-offset="1566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
@@ -1054,33 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="5328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="41" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-7.3333335" vertical-offset="1836" max-vertical-offset="2250">
-          <folding>
-            <marker date="1391972024532" expanded="true" signature="49:1827" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="79:507" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="537:1166" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1198:1675" placeholder="..." />
-            <marker date="1391972024532" expanded="true" signature="1720:1820" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1674">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/mail.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386">
@@ -1088,30 +940,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/invoice_info.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="0" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1980">
+        <state line="69" column="0" selection-start="2285" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="865" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/reports/tisk.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="0" selection-start="5924" selection-end="5924" vertical-scroll-proportion="0.0" vertical-offset="2430" max-vertical-offset="5526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="52" selection-start="1881" selection-end="1881" vertical-scroll-proportion="-8.0" vertical-offset="1818" max-vertical-offset="2232">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/invoice_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="8" column="112" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/invoice_info.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="0" selection-end="273" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="378">
+        <state line="82" column="0" selection-start="1688" selection-end="1688" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1926">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoice_mailer/reminder.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="385" selection-end="385" vertical-scroll-proportion="0.5308311" vertical-offset="0" max-vertical-offset="432">
+        <state line="11" column="26" selection-start="385" selection-end="385" vertical-scroll-proportion="0.37265417" vertical-offset="59" max-vertical-offset="432">
           <folding />
         </state>
       </provider>

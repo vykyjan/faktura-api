@@ -17,11 +17,24 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    @invoice = current_user.invoices.new(post_params)
-    @invoice.save
 
-    InvoiceMailer.invoice_info(invoice, current_user).deliver
-    redirect_to @invoice
+    @invoice = current_user.invoices.new(post_params)
+    #@invoice.save
+
+    respond_to do |format|
+      if @invoice.save
+        invoice_one(@invoice, current_user)
+        InvoiceMailer.invoice_info(@invoice, current_user).deliver
+
+        format.html { redirect_to(@invoice, notice: 'Faktura byla úspěšně vytvořena a byla odeslána klientovi') }
+        format.json { render json: @invoice, status: :created, location: @invoice }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @invoice.errors, status: :unprocessable_entity }
+      end
+    end
+
+
 
   end
 
@@ -30,6 +43,7 @@ class InvoicesController < ApplicationController
 
     @users = current_user[:id]
     @pieces = @invoice.pieces.all
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -64,14 +78,14 @@ class InvoicesController < ApplicationController
   def mail
   invoice = Invoice.find(params[:id])
 
-
   InvoiceMailer.invoice_info(invoice, current_user).deliver
   end
 
-  def tisk
+  def reminder
     invoice = Invoice.find(params[:id])
 
     invoice_one(invoice, current_user)
+    InvoiceMailer.reminder(invoice, current_user).deliver
     send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "output.pdf", :type => "application/pdf")
   end
 

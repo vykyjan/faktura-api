@@ -7,7 +7,7 @@ module Tisk
 
   def invoice_one(invoice, current_user)
     # Rails.root.join("tmp/dodaci-listy.pdf")
-    Prawn::Document.generate(Rails.root.join('tmp', "faktura.pdf"),:page_size   => "A4", :margin => [1.5.cm,1.5.cm,1.5.cm,1.5.cm],
+    Prawn::Document.generate(Rails.root.join(output_path, filename),:page_size   => "A4", :margin => [1.5.cm,1.5.cm,1.5.cm,1.5.cm],
                              :info => {
                                  :Title        => "#{invoice.description}",
                                  :Author       => "Fulfillment ELMS service",
@@ -141,6 +141,15 @@ module Tisk
 
     end
   end
+    def output_path
+      @output_path ||= File.join(Rails.root,'tmp','documents')
+    end
+
+    def filename
+      @output_file ||= "#{Invoice.object_id}.pdf"
+    end
+
+
   def invoice_all(invoice, current_user)
     # Rails.root.join("tmp/dodaci-listy.pdf")
     Prawn::Document.generate(Rails.root.join('tmp', "faktury.pdf"),:page_size   => "A4", :margin => [1.5.cm,1.5.cm,1.5.cm,1.5.cm],
@@ -281,8 +290,10 @@ module Tisk
         #end
       end
 
-    end
   end
+
+
+end
 
 
 
