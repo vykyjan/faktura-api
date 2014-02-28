@@ -6,10 +6,10 @@
 <body>
 <h1>Dobrý den, <%= @clients.name %></h1>
 <p>
-  připomínám se s úhradou faktury č.<%= invoice.numb_invoice %> na částku <%= invoice.total_price %> Kč. Faktura je nyní po splatnosti, prosím proto o neprodlenou úhradu.<br>
+  připomínám se s úhradou faktury č.<%= @invoice.numb_invoice %> na částku <%= @invoice.total_price %> Kč. Faktura je nyní po splatnosti, prosím proto o neprodlenou úhradu.<br>
 <br><br>
   Děkuji<br>
-  <%= current_user.name %>
+  <%= @current_user.name %>
 </p>
 <p>
   S Pozdravem

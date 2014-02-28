@@ -39,6 +39,7 @@
       <td><%= link_to 'Prohlédnout', invoice %></td>
       <td><%= link_to 'Změnit', edit_invoice_path(invoice) %></td>
       <td><%= link_to 'Smazat', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
+      <td><%= link_to "clone", clone_invoice_path(invoice) %></td>
       </tr>
   <% end %>
 </table>

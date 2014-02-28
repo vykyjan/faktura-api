@@ -2,8 +2,11 @@ FakturaApi::Application.routes.draw do
 
 
   resources :invoices  do
+    get "clone", :on => :member
+    get "thanks", :on => :member
     get "tisk", :on => :member
     get "mail", :on => :member
+    get "reminder_email", :on => :member
     resources :pieces do
       collection do
         get 'download_pdf'

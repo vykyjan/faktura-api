@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140207164759) do
+ActiveRecord::Schema.define(version: 20140226154921) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20140207164759) do
     t.date     "payment_date"
     t.float    "total_price"
     t.integer  "user_id"
+    t.date     "reminder"
   end
 
   add_index "invoices", ["client_id"], name: "index_invoices_on_client_id", using: :btree

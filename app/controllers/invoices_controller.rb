@@ -81,19 +81,52 @@ class InvoicesController < ApplicationController
   InvoiceMailer.invoice_info(invoice, current_user).deliver
   end
 
-  def reminder
-    invoice = Invoice.find(params[:id])
+  def thanks
+  @invoice = Invoice.find(params[:id])
 
-    invoice_one(invoice, current_user)
-    InvoiceMailer.reminder(invoice, current_user).deliver
-    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "output.pdf", :type => "application/pdf")
+    InvoiceMailer.thanks(@invoice, current_user).deliver
+
   end
+
+  def reminder_email
+    invoice = Invoice.find(params[:id])
+    @invoice = Invoice.find(params[:id])
+    if Invoice.update(@invoice, :reminder => Time.now)
+      render 'reminder_email'
+    else
+      render 'index'
+    end
+    invoice_one(invoice, current_user)
+    InvoiceMailer.reminder_email(invoice, current_user).deliver
+   #
+  end
+
+  def tisk
+    invoice = Invoice.find(params[:id])
+    invoice_one(invoice, current_user)
+    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "faktura.pdf", :type => "application/pdf")
+  end
+
+  def clone
+    @invoice = Invoice.find(params[:id]).clone
+
+    if @invoice.save
+      flash[:notice] = 'Faktura byla úspěšně duplikovaná.'
+    else
+      flash[:notice] = 'Chyba: fakturu se nepodařilo duplikovat.'
+    end
+
+    redirect_to(invoices_path)
+  end
+
 
   private
   def post_params
 
-    params.require(:invoice).permit(:description, :price, :client_id, :user_id, :var_symbol, :konst_symbol, :numb_invoice, :date_of_issue, :date_of_the_chargeable_event, :due_date, :payment_date, :total_price)
+    params.require(:invoice).permit(:description, :price, :client_id, :user_id, :var_symbol, :konst_symbol, :numb_invoice, :date_of_issue, :date_of_the_chargeable_event, :due_date, :payment_date, :total_price, :reminder)
   end
+
+
 
   def show_navbar
     @show_navbar = false

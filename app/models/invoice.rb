@@ -4,7 +4,7 @@ class Invoice < ActiveRecord::Base
 
 has_many :pieces
 
-  before_create :create_numb_invoice
+  before_save :create_numb_invoice
 
  # before_create :set_per_user_id
 
