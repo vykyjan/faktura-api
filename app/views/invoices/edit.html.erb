@@ -1,4 +1,4 @@
-<h1>Zm2nit fakturu</h1>
+<h1>Změnit fakturu</h1>
 
 <%= form_for(@invoice) do |f| %>
     <%=f.collection_select :client_id, Client.all, :id, :name %>

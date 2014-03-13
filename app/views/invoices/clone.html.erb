@@ -1,0 +1,35 @@
+Vybrat client
+<%= form_for(@invoice) do |f| %>
+    <%=f.collection_select :client_id, current_user.clients, :id, :name  %>
+
+    <%= f.label :description, "Popis" %></br>
+    <%= f.text_field :description, :value => @invoice1.description %>
+
+    <%= f.label :var_symbol, "Variabilní symbol" %></br>
+    <%= f.text_field :var_symbol, :value => @invoice1.var_symbol %>
+
+    <%= f.label :konst_symbol, "Konstantn9 symbol" %></br>
+    <%= f.text_field :konst_symbol, :value => @invoice1.konst_symbol %>
+
+
+
+    <%= f.label :date_of_issue, "Datum vystavení" %></br>
+    <%= f.text_field :date_of_issue, :value => @invoice1.date_of_issue %>
+
+    <%= f.label :date_of_the_chargeable_event, "Datum uskutečnění zdanitelného plnění" %></br>
+    <%= f.text_field :date_of_the_chargeable_event, :value => @invoice1.date_of_the_chargeable_event %>
+
+    <%= f.label :due_date, "Datum splatnosti" %></br>
+    <%= f.text_field :due_date, :value => @invoice1.due_date %>
+
+    <%= f.label :payment_date, "Datum zaplacení" %></br>
+    <%= f.text_field :payment_date, :value => @invoice1.payment_date %>
+
+
+
+    <%= f.label :price, "Cena" %></br>
+    <%= f.text_field :price, :value => @invoice1.price %>
+
+    <%= f.submit "Vytvořit fakturu" %>
+
+<% end %>

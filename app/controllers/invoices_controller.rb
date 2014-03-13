@@ -108,16 +108,34 @@ class InvoicesController < ApplicationController
   end
 
   def clone
-    @invoice = Invoice.find(params[:id]).clone
+    @invoice = Invoice.new
+    @invoice1 = Invoice.find(params[:id])
+ #@invoice = Invoice.find(params[:id]).clone
+  #if @invoice.save
+   #flash[:notice] = 'Faktura byla úspěšně duplikovaná.'
+   # else
+    #  flash[:notice] = 'Chyba: fakturu se nepodařilo duplikovat.'
+    #end
 
-    if @invoice.save
-      flash[:notice] = 'Faktura byla úspěšně duplikovaná.'
-    else
-      flash[:notice] = 'Chyba: fakturu se nepodařilo duplikovat.'
-    end
-
-    redirect_to(invoices_path)
   end
+
+  def create2
+    @invoice = current_user.invoices.build(post_params)
+    #@invoice.save
+
+    respond_to do |format|
+      if @invoice.save
+        invoice_one(@invoice, current_user)
+        InvoiceMailer.invoice_info(@invoice, current_user).deliver
+
+        format.html { redirect_to(@invoice, notice: 'Faktura byla úspěšně vytvořena a byla odeslána klientovi') }
+        format.json { render json: @invoice, status: :created, location: @invoice }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @invoice.errors, status: :unprocessable_entity }
+      end
+    end
+    end
 
 
   private
