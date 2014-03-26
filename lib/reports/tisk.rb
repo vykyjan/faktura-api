@@ -122,13 +122,19 @@ module Tisk
         data = []
         if invoice.client.hdp
           zaklad = 0
+          zaklad2 = 0
+          rozdil_zaokrouhleni =0
           dph.each do |k,v|
             dilci_zaklad = (v.to_f/(1+(k.to_f/100)))
             data.push (["DPH #{k.to_f}%", sprintf("%.2f Kč" , v.to_f-dilci_zaklad)])
            zaklad += (v.to_f / (1 + (k.to_f/100)))
-
+           zaklad2 = zaklad.round
+            rozdil_zaokrouhleni = zaklad2 - zaklad
           end
+          data.insert(0,["Po zaokrouhleni", sprintf("%.2f Kč" ,zaklad2)])
+          data.insert(0,["Zaokrouhleni", sprintf("%.2f Kč" ,rozdil_zaokrouhleni)])
           data.insert(0,["Celkem bez DPH", sprintf("%.2f Kč " ,zaklad)])
+
         end
         data.push([" ", " "])
         data.push(["<font size='16'>Celkem</font>", "<font size='16'>" + sprintf("%.2f kč " ,total) + "</font>"])
