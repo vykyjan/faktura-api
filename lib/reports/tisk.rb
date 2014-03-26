@@ -5,7 +5,7 @@ require "prawn/measurement_extensions"
 
 module Tisk
 
-  def invoice_one(invoice, current_user)
+  def invoice_one(invoice, current_user, piece)
     # Rails.root.join("tmp/dodaci-listy.pdf")
     Prawn::Document.generate(Rails.root.join(output_path, filename),:page_size   => "A4", :margin => [1.5.cm,1.5.cm,1.5.cm,1.5.cm],
                              :info => {
@@ -64,6 +64,7 @@ module Tisk
         text "#{current_user.name}"
         text "#{current_user.street}"
         text "#{current_user.PSC} #{current_user.street2}"
+        text "#{current_user.city}"
         move_down font.height
         text "IČ: #{current_user.ic}"
         text "DIČ: #{current_user.dic}"
@@ -94,7 +95,7 @@ module Tisk
         total = 0
         dph = {}
 
-        invoice.pieces.each do |p|
+        piece.each do |p|
           if invoice.client.hdp
             data.push([p.text, p.number_piece, p.DPH, sprintf("%.2f",p.price_piece),sprintf("%.2f",p.number_piece * p.price_piece)])
             if dph["#{p.DPH}"].nil?

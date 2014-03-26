@@ -19,12 +19,13 @@ class InvoicesController < ApplicationController
   def create
 
     @invoice = current_user.invoices.new(post_params)
-    #@invoice.save
+
+    piece = @invoice.pieces
 
     respond_to do |format|
       if @invoice.save
-        invoice_one(@invoice, current_user)
-        InvoiceMailer.invoice_info(@invoice, current_user).deliver
+       # invoice_one(@invoice, current_user, piece)
+        #InvoiceMailer.invoice_info(@invoice, current_user).deliver
 
         format.html { redirect_to(@invoice, notice: 'Faktura byla úspěšně vytvořena a byla odeslána klientovi') }
         format.json { render json: @invoice, status: :created, location: @invoice }
@@ -78,13 +79,13 @@ class InvoicesController < ApplicationController
   def mail
   invoice = Invoice.find(params[:id])
 
-  InvoiceMailer.invoice_info(invoice, current_user).deliver
+  InvoiceMailer.invoice_info(invoice, current_user, piece).deliver
   end
 
   def thanks
   @invoice = Invoice.find(params[:id])
 
-    InvoiceMailer.thanks(@invoice, current_user).deliver
+    InvoiceMailer.thanks(@invoice, current_user, piece).deliver
 
   end
 
@@ -103,8 +104,11 @@ class InvoicesController < ApplicationController
 
   def tisk
     invoice = Invoice.find(params[:id])
-    invoice_one(invoice, current_user)
-    send_file(Rails.root.join('tmp', "faktura.pdf"), :filename => "faktura.pdf", :type => "application/pdf")
+    @invoice = Invoice.find(params[:id])
+    piece = invoice.pieces
+
+    invoice_one(invoice, current_user, piece)
+    send_file(Rails.root.join('tmp', 'documents', "#{Invoice.object_id}.pdf"), :filename => "faktura.pdf", :type => "application/pdf")
   end
 
   def clone
@@ -119,23 +123,8 @@ class InvoicesController < ApplicationController
 
   end
 
-  def create2
-    @invoice = current_user.invoices.build(post_params)
-    #@invoice.save
 
-    respond_to do |format|
-      if @invoice.save
-        invoice_one(@invoice, current_user)
-        InvoiceMailer.invoice_info(@invoice, current_user).deliver
 
-        format.html { redirect_to(@invoice, notice: 'Faktura byla úspěšně vytvořena a byla odeslána klientovi') }
-        format.json { render json: @invoice, status: :created, location: @invoice }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @invoice.errors, status: :unprocessable_entity }
-      end
-    end
-    end
 
 
   private
