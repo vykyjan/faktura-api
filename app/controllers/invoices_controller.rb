@@ -9,6 +9,7 @@ class InvoicesController < ApplicationController
   def index
     @invoices = current_user.invoices
     @clients = Client.all
+    @cart = current_cart
   end
 
   def new

@@ -3,8 +3,10 @@ class Invoice < ActiveRecord::Base
   belongs_to :user
 
 has_many :pieces
+  has_many :line_items
 
   before_save :create_numb_invoice
+  before_destroy :ensure_not_referenced_by_any_line_item
 
  # before_create :set_per_user_id
 
@@ -20,13 +22,16 @@ has_many :pieces
     else
       self.numb_invoice = val + 1
     end
+end
 
-
-
-
- end
-
-
-
+  private
+  def ensure_not_referenced_by_any_line_item
+    if line_items.empty?
+      return true
+    else
+      errors.add(:base, 'Existuji položky')
+      return false
+    end
+  end
 
 end

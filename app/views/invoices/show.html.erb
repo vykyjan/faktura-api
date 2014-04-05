@@ -114,6 +114,7 @@ Prodávající </br>
 <%= link_to "Odeslat upomínku", :action => "reminder_email" %> <%= @invoice.reminder %></br>
 <%= link_to "Tisk", :action => "tisk" %></br>
 <%= link_to "Poděkování", :action => "thanks" %></br>
+<%= button_to "Přidat do košíku", line_items_path(:invoice_id => @invoice) %>
     <%= link_to "Zpět", invoices_path %>
     <%= link_to 'Změnit', edit_invoice_path %>
 

@@ -7,6 +7,7 @@ FakturaApi::Application.routes.draw do
     get "tisk", :on => :member
     get "mail", :on => :member
     get "reminder_email", :on => :member
+
     resources :pieces do
       collection do
         get 'download_pdf'
@@ -14,8 +15,9 @@ FakturaApi::Application.routes.draw do
     end
   end
   devise_for :users
-
-    resources :clients
+  resources :line_items
+  resources :carts
+  resources :clients
 
 
 

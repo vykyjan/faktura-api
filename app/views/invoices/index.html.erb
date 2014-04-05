@@ -1,5 +1,8 @@
 <h1>Moje faktury</h1>
+<div class="large-3 columns">
 
+  <%= render @cart %>
+</div>
 <table>
   <tr>
     <th>Jméno</th>
@@ -40,6 +43,8 @@
       <td><%= link_to 'Změnit', edit_invoice_path(invoice) %></td>
       <td><%= link_to 'Smazat', invoice, confirm: 'Are you sure?', method: :delete, class: "btn " %> </td>
       <td><%= link_to "clone", clone_invoice_path(invoice) %></td>
+      <td><%= link_to "Přidat do košíku", line_items_path(:invoice_id => invoice), method: :post %>
+      </td>
       </tr>
   <% end %>
 </table>

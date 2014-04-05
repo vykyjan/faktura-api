@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140226154921) do
+ActiveRecord::Schema.define(version: 20140404085927) do
+
+  create_table "carts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clients", force: true do |t|
     t.string   "name"
@@ -42,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140226154921) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "var_symbol"
+    t.string   "var_symbol" @client = Client.new
     t.string   "konst_symbol"
     t.integer  "numb_invoice"
     t.date     "date_of_issue"
@@ -55,6 +60,13 @@ ActiveRecord::Schema.define(version: 20140226154921) do
   end
 
   add_index "invoices", ["client_id"], name: "index_invoices_on_client_id", using: :btree
+
+  create_table "line_items", force: true do |t|
+    t.integer  "invoice_id"
+    t.integer  "cart_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pieces", force: true do |t|
     t.text     "text"

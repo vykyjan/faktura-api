@@ -1,0 +1,12 @@
+
+<h2>Vaš košík</h2>
+<table>
+  <%= render(@cart.line_items) %>
+ <tr>
+   <td>Celkem</td>
+   <td><%= number_to_currency(@cart.total_price, :locale => :cs) %> </td>
+ </tr>
+</table>
+<%= button_to 'Vyprazdnit košík', @cart, :method => :delete, :confirm => 'Oopravdu vyprázdnit' %>
+<%= link_to 'Zpět', invoices_path %>
+<%= button_to 'Zaplatit', '#' %>

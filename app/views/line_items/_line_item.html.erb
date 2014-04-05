@@ -1,0 +1,7 @@
+
+    <tr>
+      <td><%= line_item.invoice.total_price %></td>
+      <td><%= line_item.invoice.description %></td>
+
+    <td><%= number_to_currency(line_item.total_price, :locale => :cs) %></td>
+    </tr>

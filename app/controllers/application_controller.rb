@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+
   protected
 
   def configure_permitted_parameters
@@ -12,6 +13,15 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:email, :password, :password_confirmation, :current_password, :name, :register, :ic, :dic, :bank_account, :dph, :business_name, :city, :street, :street2, :PSC, :IBAN, :SWIFT ) }
   end
 
+  private
+
+  def current_cart
+    Cart.find(session[:cart_id])
+  rescue ActiveRecord::RecordNotFound
+    cart = Cart.create
+    session[:cart_id] = cart.id
+    cart # this will get returned
+  end
 
 
 

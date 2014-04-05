@@ -23,14 +23,20 @@
 
   <body>
     <%= render 'layouts/header' %>
+
     <div class="row">
-      <div class="small-6 large-2 columns"></div>
+      <div class="large-10 columns">
+      <%= yield %>
+     </div></div>
+
+
+
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
-    <%= yield %>
       <%= render 'layouts/footer' %>
+
       </div>
         <div class="small-6 large-2 columns">
     </div>
